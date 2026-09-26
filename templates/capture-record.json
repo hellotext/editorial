@@ -1,0 +1,23 @@
+{
+  "article_source": null,
+  "public_url": null,
+  "locale": null,
+  "step_and_target_control": null,
+  "capture_date": null,
+  "capture_tool": null,
+  "source_route_and_state": null,
+  "demonstration_data_verified": false,
+  "original_file": null,
+  "published_derivative": null,
+  "logical_viewport": {"width": null, "height": null},
+  "source_pixels": {"width": null, "height": null},
+  "max_display_css_pixels": {"width": null, "height": null},
+  "actual_file_format": null,
+  "icc_profile_and_verification": null,
+  "native_color_provenance": null,
+  "transformations": [],
+  "pointer": {"kind": null, "target": null, "coordinates": null},
+  "verification": {"density": "pending", "desktop": "pending", "mobile": "pending", "served_asset": "pending"},
+  "limitations": [],
+  "status": "proposed"
+}
