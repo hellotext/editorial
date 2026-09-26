@@ -52,18 +52,28 @@ Before adding or replacing an asset:
 
 ## Pointers and step annotations
 
-Use a visible pointer only when the reader needs help locating a control.
-Prefer capturing the real pointer at the target in the relevant interface state.
-Place its tip on the target without covering its label or the value being taught.
-Keep pointer appearance and scale consistent across the article. Do not imply
-that a click, save or successful result occurred merely by showing a pointer.
+Capture screenshots without a pointer by default, including original and review
+captures. Hide the system cursor, move any automation pointer outside the crop,
+and inspect the saved pixels: a remote-control pointer overlay can remain even
+when the capture API hides the system cursor. Never leave a pointer over a
+metric, label, field value or unrelated part of the interface.
+
+Show a pointer only when deliberately highlighting the clickable button or link
+that the reader should use. Make it visibly larger than the normal pointer at
+the article's display size, and place its tip over that button or link without
+covering its label. If it cannot fit clearly on the target, leave it out and
+name the control in the prose or a callout. Keep pointer appearance and scale
+consistent across the article. Do not imply that a click, save or successful
+result occurred merely by showing a pointer.
 
 When a capture route omits the pointer, a separately authored pointer overlay
 may be used as an editorial annotation. Preserve the untouched capture, record
 the overlay and target coordinates, and check that compositing preserves native
-resolution and the genuine color profile. Never alter application text, controls,
-values or results to manufacture evidence. Do not use generative reconstruction
-of interface pixels. An annotation cannot repair an inadequate source capture.
+resolution and the genuine color profile. Use this only for the same intentional
+button-or-link exception; record pointer absence explicitly otherwise. Never
+alter application text, controls, values or results to manufacture evidence. Do
+not use generative reconstruction of interface pixels. An annotation cannot
+repair an inadequate source capture.
 
 One numbered callout can identify a control when a pointer alone is ambiguous.
 Do not add decorative arrows or rely on color alone. The prose must name the

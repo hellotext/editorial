@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-09-26 — Cursor-free screenshot default
+
+Capture screenshots without a pointer by default. A visibly enlarged pointer
+may appear only to highlight the clickable button or link named in the step,
+with its tip on the target and no label obscured. Inspect saved pixels because
+remote-control overlays may survive system cursor-hiding settings.
+
 ## 2026-09-25 — Static screenshot figures
 
 Screenshots now render as non-interactive figures without image links, new-tab
