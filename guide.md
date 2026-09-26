@@ -13,7 +13,7 @@ Keep existing drafts unpublished.
 | Where to click or how the actual interface represents a rule | `screenshot` | Capture the real application, use demonstration data, retain enough surrounding context and include descriptive alt text. |
 | What a customer would read or how they might respond | `messages` with one panel | Write a complete, plausible example and identify its channel, business and relevant context. |
 | Why context changes the message | `messages` with two panels | Compare the same situation or clearly name the two audiences. Tabs show one phone at a time; keep each message focused and complete. |
-| A one-off screenshot specific to an article | The publishing project's existing figure/attachment integration | Keep the original asset, accessible description and full-size link. |
+| A one-off screenshot specific to an article | The publishing project's existing figure/attachment integration | Keep the original asset and accessible description; render the screenshot without a link or open control. |
 
 Use images for evidence of the interface and HTML components for message
 content. Do not recreate an application screen as an invented screenshot or
@@ -28,8 +28,11 @@ Caption data describes the figure for assistive technology, including whether
 it shows a real interface with demonstration data or an illustrative message;
 it is not displayed below the figure.
 Screenshots should avoid unrelated navigation, private customer data and
-unreadably small full-screen captures. Keep original proportions; the reader
-can open the source image at full size.
+unreadably small full-screen captures. Keep original proportions and render
+them as static figures. Do not wrap screenshot images in links or add controls
+that open them in another tab or window. Keep essential details readable at
+desktop and mobile widths; use a tighter crop or explain the detail in prose
+when a complete interface cannot stay legible inline.
 
 ## Help Center articles
 

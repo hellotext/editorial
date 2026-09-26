@@ -41,10 +41,14 @@ Before adding or replacing an asset:
    Record the capture route, logical size, source size, density, date and color
    provenance with the asset's documentation.
 3. Set catalog `width` and `height` to the actual source dimensions. Preserve
-   the aspect ratio and full-size original link.
+   the aspect ratio, and keep the original PNG with the consuming project for
+   provenance. Render screenshots as static images: no image link, new-tab or
+   new-window target, or open/enlarge control.
 4. Review the rendered figure in Resources and Help at desktop/mobile widths,
-   including text sharpness on a Retina display and the full-size original.
-   Verify copied/exported assets retain their format and color profile.
+   including text sharpness and readability on a Retina display. If essential
+   labels become too small inline, improve the crop or adjacent explanation
+   instead of relying on an enlargement link. Verify copied/exported assets
+   retain their format and color profile.
 
 ## Pointers and step annotations
 
