@@ -27,10 +27,11 @@ existing figures are preserved. Do not republish an existing draft implicitly.
 ## Verify and record
 
 Preview every inserted figure in the complete article. Check desktop and mobile
-layout, image sharpness and original access, accessible descriptions, tabs,
-keyboard interaction and inert example actions. Preserve links and the reading
-index. Run the publishing project's normal build and relevant checks; verify
-styles in the browser rather than adding stylesheet-content tests.
+layout, image sharpness and readability, accessible descriptions, tabs,
+keyboard interaction and inert example actions. Confirm screenshots have no
+image links or open controls. Preserve article links and the reading index.
+Run the publishing project's normal build and relevant checks; verify styles
+in the browser rather than adding stylesheet-content tests.
 
 Keep durable inventory, originals, plans, source examples, capture provenance,
 actual change records and pending checks. Record the public URL and deployment
