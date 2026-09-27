@@ -32,6 +32,27 @@ data and exclude unrelated UI. Capture only the relevant interface, retaining
 the surrounding context necessary to understand it. Keep captions and message
 examples as accessible HTML instead of baking them into a screenshot.
 
+Prepare the demonstration data before capturing a report. Populate the actual
+source records used by its calculations so the selected period, KPI cards,
+chart and breakdown agree with one another. Use enough dated records to show a
+readable, plausible trend across the displayed period and enough relevant
+categories to make the chosen comparison useful. Avoid empty panels, isolated
+spikes caused only by sparse fixtures, repeated identical values, and metrics
+cut off by a narrow viewport. Inspect the complete report at its intended
+capture size; add only the missing synthetic records or choose a more useful
+period before taking the image. Keep the underlying calculations and units
+truthful. Do not redraw, smooth or replace chart pixels after capture to make
+the results look better.
+
+Use an isolated demonstration account and verify the database or account
+identity before adding records. Complete only the fictitious profile fields
+needed to explain the screen. Keep demonstration contacts non-deliverable and
+automations inactive, and never send a campaign or message for a screenshot.
+Record the fixture source, selected period, filters and relevant data counts
+with the capture provenance so another editor can reproduce the state. Describe
+the values as demonstration data in the figure's accessible context; they are
+not evidence of real customer outcomes.
+
 For a card or panel, leave a modest, balanced margin of genuine application
 background around its complete border and shadow when the interface allows it.
 Keep the UI's real internal spacing; text and controls must not touch the image
