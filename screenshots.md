@@ -16,6 +16,19 @@ size while increasing raster density, rather than widening the interface to
 fit more content. Resampling or upscaling an existing bitmap does not count as
 a higher-resolution capture.
 
+Set the browser to the intended application layout before capturing. Physical
+display resolution, native window size, device-pixel ratio and an emulated
+viewport do not establish the page's actual CSS viewport or breakpoint. Check
+the page's rendered viewport dimensions and browser zoom, then inspect the
+layout in the **native captured window**. If a tablet-sized window unexpectedly
+shows a narrow, two-card carousel, correct the zoom or viewport, or use a wider
+desktop breakpoint before capturing. For a report intended to show four KPI
+cards together, verify that all four complete cards, values and labels are
+visible in one row in the saved image, without a carousel arrow covering a
+value. A large PNG of a narrow layout does not count as a desktop capture.
+Recheck the visible layout and source-to-display density after every viewport
+or zoom change.
+
 Capture from a color-managed Display P3 surface and save a genuine lossless
 PNG with its Display P3 ICC profile embedded. Preserve that profile through
 cropping, attachment handling, Help export and any image optimization. A
@@ -44,6 +57,17 @@ period before taking the image. Keep the underlying calculations and units
 truthful. Do not redraw, smooth or replace chart pixels after capture to make
 the results look better.
 
+For an illustrative demonstration report, make every visible KPI comparison
+indicator below its chart green through coherent fictitious source data. Check
+the application's direction for each metric: a useful rate or revenue may
+improve by rising, while response time or another undesirable measure may
+improve by falling. Verify the period-over-period value, direction
+and color in the rendered UI and the saved native pixels. If an indicator is
+red, adjust only the isolated source records or select a representative period
+and rerun the real calculation. Do not recolor pixels, invert a comparison in
+markup, or describe real customer results as though they were demonstration
+data.
+
 Verify chart readiness with the exact request made by the interface, including
 the date picker's start and end parameters, time zone and filters, through the
 backend presenter that renders the report. Ad hoc full-day timestamp queries
@@ -68,6 +92,20 @@ edge. Judge this margin at the image's intended size in the article, not only
 at native pixel size. This space inside the captured image is separate from the
 figure stage's outer padding. Do not add a fabricated blank canvas or wide empty
 gutters to the PNG to simulate it; adjust the viewport or recapture instead.
+
+Before accepting a candidate, inspect its saved pixels at the size it will
+have in the complete article. Confirm the whole control, chart or panel needed
+for the instruction is visible; all expected KPI cards fit the intended row;
+the surrounding background and internal spacing are balanced; no stray gray
+line, clipped shadow, scrollbar, pointer, debug overlay or private data appears;
+and the locale and demonstration values match the adjacent text. Confirm any
+visible KPI comparisons meet the green-indicator source-data rule above. For
+Help, check the rendered figure in both languages and at desktop and mobile
+widths for a full-width, consistently bordered lavender stage with its own
+inset and a separate white-image inset. The figure must stay within the article
+column, retain at least 2× source density, and remain a static image without
+a link or open control. Fix a failed presentation check and recapture any
+failed source before marking its visual work complete.
 
 Before adding or replacing an asset:
 
@@ -139,7 +177,9 @@ Keep an original and any cropped/annotated derivative in the consuming project,
 with a record based on [the capture template](templates/capture-record.json).
 Record the actual route/state, UI locale, date, tool, logical viewport, source
 pixels, intended maximum CSS size, ICC verification, transformations and target
-control. Avoid credentials or private record identifiers in publishable records.
+control. Include the browser zoom or device emulation state when it affects the
+layout, and confirm that the recorded viewport matches the native screenshot.
+Avoid credentials or private record identifiers in publishable records.
 
 Mark a capture verified only after file inspection and article rendering at
 both desktop and mobile sizes. Check the built or served file too: image

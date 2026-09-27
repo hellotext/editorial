@@ -38,6 +38,13 @@ actual change records and pending checks. Record the public URL and deployment
 revision when applicable. After authorized publication, verify the public page
 and served assets. A successful local build or exported bundle is not publication.
 
+When a reader points out a defect in a screenshot or its presentation, inspect
+and correct the affected article, then record the specific finding and result
+in that article's work record. Add any rule that applies to future articles to
+the relevant canonical shared guide before the next capture batch. Review
+those recorded corrections against each new candidate and its complete page;
+do not rely on the image file's metadata alone to close a visual follow-up.
+
 If login is missing, request it once and continue independent preparation.
 Report completed batches, meaningful problems or required input. An unchanged
 blocker is not a reason to repeat notifications. When a requested inventory is
