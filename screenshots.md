@@ -44,6 +44,14 @@ period before taking the image. Keep the underlying calculations and units
 truthful. Do not redraw, smooth or replace chart pixels after capture to make
 the results look better.
 
+Verify chart readiness with the exact request made by the interface, including
+the date picker's start and end parameters, time zone and filters, through the
+backend presenter that renders the report. Ad hoc full-day timestamp queries
+can produce different counts and category shares from the visible report. In
+the isolated demonstration account, add only the missing fictitious source
+records, then recheck the displayed KPI cards, trend and breakdown until they
+are consistent and useful at the selected period.
+
 Use an isolated demonstration account and verify the database or account
 identity before adding records. Complete only the fictitious profile fields
 needed to explain the screen. Keep demonstration contacts non-deliverable and
