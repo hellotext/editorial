@@ -52,6 +52,14 @@ visible descriptive captions below their stages. Provide accessible names,
 image alternative text and illustrative-case context in the supported metadata;
 explanatory prose remains in the article. Comparison tabs label the alternatives.
 
+Keep screenshot stages consistent across Help articles. A lavender stage fills
+the available article column and retains the visual component's subtle border
+and rounded corners. Article-specific rules may adjust the inset or center a
+narrower image to preserve native capture density, but must not remove or
+recolor the stage border. Replace a narrow source with a compliant wider
+capture when its side space becomes distracting; do not upscale it to fill the
+stage.
+
 See [screenshot standards](screenshots.md), [message examples](messages.md) and
 [the publishing workflow](workflow.md). Rendering dimensions, channel shells,
 validated payload fields and export commands belong to the application's local
