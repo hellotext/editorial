@@ -32,6 +32,14 @@ data and exclude unrelated UI. Capture only the relevant interface, retaining
 the surrounding context necessary to understand it. Keep captions and message
 examples as accessible HTML instead of baking them into a screenshot.
 
+For a card or panel, leave a modest, balanced margin of genuine application
+background around its complete border and shadow when the interface allows it.
+Keep the UI's real internal spacing; text and controls must not touch the image
+edge. Judge this margin at the image's intended size in the article, not only
+at native pixel size. This space inside the captured image is separate from the
+figure stage's outer padding. Do not add a fabricated blank canvas or wide empty
+gutters to the PNG to simulate it; adjust the viewport or recapture instead.
+
 Before adding or replacing an asset:
 
 1. Inspect the file signature, actual pixel dimensions and embedded ICC profile
