@@ -24,6 +24,11 @@ of performance.
 
 Place a visual after the paragraph that establishes its purpose. One visual
 should explain one idea. The surrounding prose establishes what to notice.
+Keep each figure in the article's reading flow; do not let a neighboring
+paragraph wrap into a narrow strip beside the image. Put any follow-up
+explanation in its own paragraph below the figure. If prose includes a small
+interface icon, size it like an inline icon rather than scaling its source
+image to a large article figure; inspect it at desktop and mobile widths.
 Caption data describes the figure for assistive technology, including whether
 it shows a real interface with demonstration data or an illustrative message;
 it is not displayed below the figure.

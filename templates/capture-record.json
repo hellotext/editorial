@@ -10,6 +10,8 @@
   "original_file": null,
   "published_derivative": null,
   "logical_viewport": {"width": null, "height": null},
+  "browser_zoom_percent": null,
+  "device_emulation": null,
   "source_pixels": {"width": null, "height": null},
   "max_display_css_pixels": {"width": null, "height": null},
   "actual_file_format": null,

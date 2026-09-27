@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-09-27 — Capture layout and correction checks
+
+Verify the page's actual viewport, zoom and native captured layout before
+treating a large PNG as a desktop screenshot. Inspect the saved figure for the
+complete intended KPI row, clean crop, locale, synthetic data and consistent
+article-stage presentation. Illustrative demonstration reports require green
+KPI comparisons from real calculations over coherent fictitious source data.
+Keep neighboring prose below figures and inline icons at an appropriate text
+scale. Record reader corrections in the article work log and add reusable
+lessons to this shared guide.
+
 ## 2026-09-26 — Cursor-free screenshot default
 
 Capture screenshots without a pointer by default. A visibly enlarged pointer
