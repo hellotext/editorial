@@ -172,6 +172,19 @@ only for the selected ID. If any check fails or the window closes, discard that
 shot and stop the batch; resolve the mismatch and start a new manually selected
 batch. Never fall back to broad window enumeration or silently switch windows.
 
+An authorized native window-only capture tool may reuse the exact ID of that
+previously editor-selected demonstration window across helper processes while
+the same window remains open and native OS capture permission is valid for the
+tool. The ID identifies a target; it does not grant permission. Before and
+after every shot, verify the Chrome bundle identifier, owner PID, exact
+expected title and bounds, and the bound tab's exact URL and isolated
+demonstration account. Query metadata only for that ID; never enumerate other
+windows or switch windows. If the ID, PID, window or permission changes, or
+identity cannot be verified, stop and have the editor select the intended
+window again. Reuse may span a helper process restart only when these
+conditions still hold; a browser window or system restart requires a new
+selection.
+
 Before a batch, prove the selected tool produces a compliant file. A browser's
 reported device-pixel ratio, filename or attractive preview is not evidence of
 actual output density or gamut. Check the bytes and profile of the saved file.
