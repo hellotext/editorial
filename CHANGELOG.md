@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-09-28 — Persistent window selection for capture batches
+
+Select one fictional Chrome window with `SCContentSharingPicker` per native
+macOS batch, then run planned screenshots from that retained selection. Verify
+the window identity, bounds, page and demonstration account for every shot;
+stop on a mismatch without enumerating or switching to another window.
+
 ## 2026-09-28 — Article-wide visual coverage
 
 Review every significant Help Center step, choice, report panel and result for

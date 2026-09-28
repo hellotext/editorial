@@ -156,6 +156,22 @@ control and action, and alternative text must explain what matters in the image.
 
 ## Capture readiness
 
+For a native macOS batch using a dedicated fictional Chrome window, have the
+editor select that single window once with `SCContentSharingPicker`. Require the
+picker result to contain exactly one Chrome window, retain that selection for
+the batch, then run the planned screenshots automatically from that window.
+Changing the planned page, panel or locale in the same window must not prompt
+for another picker selection. Do not enumerate all shareable windows or search
+other Chrome windows to find a title match.
+
+Before each shot, verify the selected window ID, Chrome owner PID, exact
+expected title and bounds. Confirm that the controlled browser tab in that
+window shows the expected page URL and isolated demonstration account. Repeat
+these checks after capture, before accepting the file. Query window metadata
+only for the selected ID. If any check fails or the window closes, discard that
+shot and stop the batch; resolve the mismatch and start a new manually selected
+batch. Never fall back to broad window enumeration or silently switch windows.
+
 Before a batch, prove the selected tool produces a compliant file. A browser's
 reported device-pixel ratio, filename or attractive preview is not evidence of
 actual output density or gamut. Check the bytes and profile of the saved file.
