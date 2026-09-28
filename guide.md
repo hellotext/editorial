@@ -48,6 +48,16 @@ Do not capture every trivial click. Prioritize unfamiliar controls, choices,
 configuration logic and the resulting state. Avoid repeating nearly identical
 screens just to increase the number of images.
 
+Review the complete guide section by section for visual coverage. For each
+significant step, choice, report panel or result, decide whether seeing the
+interface would help the reader recognize or verify it. Guides spanning
+several views or stages should normally use several complementary screenshots,
+each answering a different reader question. If one image or none is enough,
+record the concrete reason for leaving the other sections in prose, such as a
+conceptual explanation, a trivial control, a redundant view or labels that
+would be unreadable at the article's final width. Judge coverage in the
+rendered article, not by a fixed image count.
+
 Use neutral Spanish with tú. Match screenshots to the article language and the
 actual interface labels. Adapt published translations; do not replace localized
 screens with a different-language interface without recording the limitation.
