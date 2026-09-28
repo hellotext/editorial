@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-09-28 — Article-wide visual coverage
+
+Review every significant step, choice, report panel and result for a useful
+interface image. Guides spanning several views or stages should normally use
+complementary screenshots; document why one or none is enough. Keep useful
+captures that cannot yet be made as pending visual work rather than marking
+the article complete. Judge the images in the full rendered article without
+applying a fixed image quota.
+
 ## 2026-09-27 — Capture layout and correction checks
 
 Verify the page's actual viewport, zoom and native captured layout before
