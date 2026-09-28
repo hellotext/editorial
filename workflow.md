@@ -11,9 +11,10 @@ Read the complete current article. Preserve an original snapshot and make a
 small article-specific plan: insertion point, reader question, visual type,
 required interface state and verification. Distinguish proposals from saved,
 merged, deployed and publicly verified changes.
-For every significant section, note the reader question a screenshot would
-answer or why a screenshot would not help. Record any useful visual that cannot
-yet be captured as pending work rather than marking the article complete.
+For Help Center articles, note the reader question a screenshot would answer
+for each significant interface section or why a screenshot would not help.
+Record any useful visual that cannot yet be captured as pending work rather
+than marking the article complete.
 
 ## Work in small batches
 
