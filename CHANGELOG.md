@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-09-29 — Current plan prices in billing screenshots
+
+Check visible plan names, prices, currencies, billing periods and rates against
+current authoritative product data before capturing billing screens. Prefer
+Grow or Pro demonstration accounts when enterprise terms are unnecessary;
+recapture outdated isolated fixture values from the interface and record the
+amount source and date. Do not edit screenshot pixels to fix a price.
+
 ## 2026-09-29 — Automatic isolated Chrome capture
 
 Prefer a dedicated headless Chrome profile for fictional local application
