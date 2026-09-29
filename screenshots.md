@@ -29,8 +29,9 @@ value. A large PNG of a narrow layout does not count as a desktop capture.
 Recheck the visible layout and source-to-display density after every viewport
 or zoom change.
 
-Capture from a color-managed Display P3 surface and save a genuine lossless
-PNG with its Display P3 ICC profile embedded. Preserve that profile through
+Capture from a color-managed Display P3 surface or a compositor explicitly
+configured for Display P3 D65, and save a genuine lossless PNG with its
+Display P3 ICC profile embedded. Preserve that profile through
 cropping, attachment handling, Help export and any image optimization. A
 `.png` extension is not proof that the encoded image is PNG. Avoid JPEG for
 interface text and controls. Do not merely assign a P3 profile to sRGB pixel
@@ -155,6 +156,30 @@ Do not add decorative arrows or rely on color alone. The prose must name the
 control and action, and alternative text must explain what matters in the image.
 
 ## Capture readiness
+
+Prefer an isolated **headless** Chrome process that contains only the fictional
+local app and exposes its DevTools endpoint on `127.0.0.1`. Use a dedicated
+profile, never the editor's everyday Chrome profile. Set its color profile to
+`display-p3-d65` and device scale factor to at least 2. Capture the real
+application compositor through `Page.captureScreenshot` as PNG, without asking
+the editor to select a window or keep a display unlocked. A retained fictional
+login may be reused; if it expires, restore only that local test account after
+verifying the isolated database and its non-deliverable contacts. Never request
+or use a real account's password.
+
+Before each automatic capture, establish that the local debugging port belongs
+to the process holding the dedicated profile, that it has exactly one page,
+and that the page's exact loopback URL, title, locale and authenticated
+fictional account identity match the planned state. Require the intended
+control or content to be visible, then check the actual CSS viewport, zoom and
+device-pixel ratio. Repeat the page checks immediately after capture; discard
+the file if anything changed. Verify the encoded PNG's real dimensions and
+embedded Display P3 ICC profile before accepting it. Record the route as a
+Chrome compositor capture, not a ScreenCaptureKit capture. Do not substitute
+a generic browser automation screenshot or JPEG without those checks. If the
+compositor route cannot deliver compliant pixels, record the exact failure and use the native
+window route below only when needed. Do not repeatedly ask for window selection
+while the isolated route is working.
 
 For a native macOS batch using a dedicated fictional Chrome window, have the
 editor select that single window once with `SCContentSharingPicker`. Require the
