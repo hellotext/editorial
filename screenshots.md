@@ -20,8 +20,9 @@ Set the browser to the intended application layout before capturing. Physical
 display resolution, native window size, device-pixel ratio and an emulated
 viewport do not establish the page's actual CSS viewport or breakpoint. Check
 the page's rendered viewport dimensions and browser zoom, then inspect the
-layout in the **native captured window**. If a tablet-sized window unexpectedly
-shows a narrow, two-card carousel, correct the zoom or viewport, or use a wider
+layout in the saved compositor output or native captured window, according to
+the capture route. If a tablet-sized window unexpectedly shows a narrow,
+two-card carousel, correct the zoom or viewport, or use a wider
 desktop breakpoint before capturing. For a report intended to show four KPI
 cards together, verify that all four complete cards, values and labels are
 visible in one row in the saved image, without a carousel arrow covering a
@@ -63,7 +64,7 @@ indicator below its chart green through coherent fictitious source data. Check
 the application's direction for each metric: a useful rate or revenue may
 improve by rising, while response time or another undesirable measure may
 improve by falling. Verify the period-over-period value, direction
-and color in the rendered UI and the saved native pixels. If an indicator is
+and color in the rendered UI and the saved capture pixels. If an indicator is
 red, adjust only the isolated source records or select a representative period
 and rerun the real calculation. Do not recolor pixels, invert a comparison in
 markup, or describe real customer results as though they were demonstration
