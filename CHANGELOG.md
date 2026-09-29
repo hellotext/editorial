@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-09-29 — Automatic isolated Chrome capture
+
+Prefer a dedicated headless Chrome profile for fictional local application
+screenshots. Capture the real compositor as a Display P3 PNG at 2× or more,
+and validate the exact local page, test account, viewport, density and ICC
+profile before accepting each image. This route avoids repeated macOS window
+selection; the ScreenCaptureKit picker remains a fallback for a concrete
+capture failure.
+
 ## 2026-09-28 — Persistent window selection for capture batches
 
 Select one fictional Chrome window with `SCContentSharingPicker` per native
