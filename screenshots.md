@@ -148,7 +148,7 @@ result occurred merely by showing a pointer.
 
 When a capture route omits the pointer, a separately authored pointer overlay
 may be used as an editorial annotation. Preserve the untouched capture, record
-the overlay and target coordinates, and check that compositing preserves native
+the overlay and target coordinates, and check that compositing preserves source
 resolution and the genuine color profile. Use this only for the same intentional
 button-or-link exception; record pointer absence explicitly otherwise. Never
 alter application text, controls, values or results to manufacture evidence. Do
@@ -236,7 +236,7 @@ with a record based on [the capture template](templates/capture-record.json).
 Record the actual route/state, UI locale, date, tool, logical viewport, source
 pixels, intended maximum CSS size, ICC verification, transformations and target
 control. Include the browser zoom or device emulation state when it affects the
-layout, and confirm that the recorded viewport matches the native screenshot.
+layout, and confirm that the recorded viewport matches the saved screenshot.
 Avoid credentials or private record identifiers in publishable records.
 
 Mark a capture verified only after file inspection and article rendering at
