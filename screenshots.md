@@ -90,6 +90,15 @@ with the capture provenance so another editor can reproduce the state. Describe
 the values as demonstration data in the figure's accessible context; they are
 not evidence of real customer outcomes.
 
+For billing and plan screenshots, verify every visible plan name, price,
+currency, billing period and rate against current authoritative product data
+before capture. Prefer a representative Grow or Pro demonstration account when
+the screen does not require an enterprise agreement; enterprise pricing may be
+custom or absent from public plan cards. If a local fixture shows an outdated
+amount, correct only the guarded isolated fixture and recapture from the real
+interface. Never fix a displayed price by editing screenshot pixels. Record the
+source and date used for each visible amount in the capture provenance.
+
 For a card or panel, leave a modest, balanced margin of genuine application
 background around its complete border and shadow when the interface allows it.
 Keep the UI's real internal spacing; text and controls must not touch the image
