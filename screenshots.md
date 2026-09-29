@@ -140,8 +140,11 @@ Before adding or replacing an asset:
    with an image metadata tool. On macOS, use `file` and
    `sips -g format -g pixelWidth -g pixelHeight -g profile <path>`.
 2. Check the source dimensions against the largest intended CSS display size.
-   Record the capture route, logical size, source size, density, date and color
-   provenance with the asset's documentation.
+   Record the CSS crop (or full viewport when uncropped), device-pixel ratio,
+   any additional capture scale, derived native logical size, actual source
+   pixels, intended maximum CSS display size, date and color provenance for
+   each responsive source. The [capture template](templates/capture-record.json)
+   includes these inputs so another editor can reproduce the native-size cap.
 3. Set catalog `width` and `height` to the actual source dimensions. Preserve
    the aspect ratio, and keep the original PNG with the consuming project for
    provenance. Render screenshots as static images: no image link, new-tab or

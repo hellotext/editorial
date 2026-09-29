@@ -6,7 +6,9 @@ Never display an interface screenshot wider than its original CSS crop,
 regardless of how many high-density pixels are in the PNG. Center a narrower
 image frame within the full-width figure stage, and verify the rendered size
 for every responsive source and locale. Recapture a more suitable view when
-the native-size presentation is too small to explain the control.
+the native-size presentation is too small to explain the control. The capture
+record now includes the crop, pixel scales and derived logical dimensions
+needed to audit this limit.
 
 ## 2026-09-29 — Current plan prices in billing screenshots
 
