@@ -2,7 +2,10 @@
 
 
 **Established — 2026-09-20.** All new screenshots, including review captures,
-use native Retina resolution and Display P3. The standard covers reusable
+use genuine 2× or higher rendering from a live application compositor or a
+native Retina capture, with Display P3 color. A headless compositor at a
+verified device scale factor of 2 or more satisfies the density requirement;
+upscaling a lower-resolution image does not. The standard covers reusable
 editorial assets, one-off Action Text uploads, Help exports and gallery
 examples. Existing lower-quality assets need a fresh capture when revised.
 
