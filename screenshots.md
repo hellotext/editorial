@@ -2,7 +2,10 @@
 
 
 **Established — 2026-09-20.** All new screenshots, including review captures,
-use native Retina resolution and Display P3. The standard covers reusable
+use genuine 2× or higher rendering from a live application compositor or a
+native Retina capture, with Display P3 color. A headless compositor at a
+verified device scale factor of 2 or more satisfies the density requirement;
+upscaling a lower-resolution image does not. The standard covers reusable
 editorial assets, one-off Action Text uploads, Help exports and gallery
 examples. Existing lower-quality assets need a fresh capture when revised.
 
@@ -20,8 +23,9 @@ Set the browser to the intended application layout before capturing. Physical
 display resolution, native window size, device-pixel ratio and an emulated
 viewport do not establish the page's actual CSS viewport or breakpoint. Check
 the page's rendered viewport dimensions and browser zoom, then inspect the
-layout in the **native captured window**. If a tablet-sized window unexpectedly
-shows a narrow, two-card carousel, correct the zoom or viewport, or use a wider
+layout in the saved compositor output or native captured window, according to
+the capture route. If a tablet-sized window unexpectedly shows a narrow,
+two-card carousel, correct the zoom or viewport, or use a wider
 desktop breakpoint before capturing. For a report intended to show four KPI
 cards together, verify that all four complete cards, values and labels are
 visible in one row in the saved image, without a carousel arrow covering a
@@ -29,8 +33,9 @@ value. A large PNG of a narrow layout does not count as a desktop capture.
 Recheck the visible layout and source-to-display density after every viewport
 or zoom change.
 
-Capture from a color-managed Display P3 surface and save a genuine lossless
-PNG with its Display P3 ICC profile embedded. Preserve that profile through
+Capture from a color-managed Display P3 surface or a compositor explicitly
+configured for Display P3 D65, and save a genuine lossless PNG with its
+Display P3 ICC profile embedded. Preserve that profile through
 cropping, attachment handling, Help export and any image optimization. A
 `.png` extension is not proof that the encoded image is PNG. Avoid JPEG for
 interface text and controls. Do not merely assign a P3 profile to sRGB pixel
@@ -62,7 +67,7 @@ indicator below its chart green through coherent fictitious source data. Check
 the application's direction for each metric: a useful rate or revenue may
 improve by rising, while response time or another undesirable measure may
 improve by falling. Verify the period-over-period value, direction
-and color in the rendered UI and the saved native pixels. If an indicator is
+and color in the rendered UI and the saved capture pixels. If an indicator is
 red, adjust only the isolated source records or select a representative period
 and rerun the real calculation. Do not recolor pixels, invert a comparison in
 markup, or describe real customer results as though they were demonstration
@@ -143,7 +148,7 @@ result occurred merely by showing a pointer.
 
 When a capture route omits the pointer, a separately authored pointer overlay
 may be used as an editorial annotation. Preserve the untouched capture, record
-the overlay and target coordinates, and check that compositing preserves native
+the overlay and target coordinates, and check that compositing preserves source
 resolution and the genuine color profile. Use this only for the same intentional
 button-or-link exception; record pointer absence explicitly otherwise. Never
 alter application text, controls, values or results to manufacture evidence. Do
@@ -155,6 +160,30 @@ Do not add decorative arrows or rely on color alone. The prose must name the
 control and action, and alternative text must explain what matters in the image.
 
 ## Capture readiness
+
+Prefer an isolated **headless** Chrome process that contains only the fictional
+local app and exposes its DevTools endpoint on `127.0.0.1`. Use a dedicated
+profile, never the editor's everyday Chrome profile. Set its color profile to
+`display-p3-d65` and device scale factor to at least 2. Capture the real
+application compositor through `Page.captureScreenshot` as PNG, without asking
+the editor to select a window or keep a display unlocked. A retained fictional
+login may be reused; if it expires, restore only that local test account after
+verifying the isolated database and its non-deliverable contacts. Never request
+or use a real account's password.
+
+Before each automatic capture, establish that the local debugging port belongs
+to the process holding the dedicated profile, that it has exactly one page,
+and that the page's exact loopback URL, title, locale and authenticated
+fictional account identity match the planned state. Require the intended
+control or content to be visible, then check the actual CSS viewport, zoom and
+device-pixel ratio. Repeat the page checks immediately after capture; discard
+the file if anything changed. Verify the encoded PNG's real dimensions and
+embedded Display P3 ICC profile before accepting it. Record the route as a
+Chrome compositor capture, not a ScreenCaptureKit capture. Do not substitute
+a generic browser automation screenshot or JPEG without those checks. If the
+compositor route cannot deliver compliant pixels, record the exact failure and use the native
+window route below only when needed. Do not repeatedly ask for window selection
+while the isolated route is working.
 
 For a native macOS batch using a dedicated fictional Chrome window, have the
 editor select that single window once with `SCContentSharingPicker`. Require the
@@ -207,7 +236,7 @@ with a record based on [the capture template](templates/capture-record.json).
 Record the actual route/state, UI locale, date, tool, logical viewport, source
 pixels, intended maximum CSS size, ICC verification, transformations and target
 control. Include the browser zoom or device emulation state when it affects the
-layout, and confirm that the recorded viewport matches the native screenshot.
+layout, and confirm that the recorded viewport matches the saved screenshot.
 Avoid credentials or private record identifiers in publishable records.
 
 Mark a capture verified only after file inspection and article rendering at
