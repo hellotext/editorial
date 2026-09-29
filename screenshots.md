@@ -19,6 +19,19 @@ size while increasing raster density, rather than widening the interface to
 fit more content. Resampling or upscaling an existing bitmap does not count as
 a higher-resolution capture.
 
+Never display an interface screenshot above 100% of its original logical
+capture size, even when its raster has enough pixels to meet the density
+minimum. Calculate the logical width from the recorded CSS crop, or divide
+the PNG width by the product of device-pixel ratio and any additional capture
+scale. For example, a 1960-pixel PNG from a 490 CSS-pixel crop at 4× must
+display at no more than 490 CSS pixels; stretching it across a 609 CSS-pixel
+article image area makes the interface unnaturally large. Keep the lavender
+figure stage full width, but center a narrower image frame capped at the
+capture's logical width. Check the actual rendered image width in each locale
+and responsive source, especially when a mobile source has a different crop.
+If that native-size limit makes the controls too small for the guide, capture
+a more suitable view from the application rather than enlarging the bitmap.
+
 Set the browser to the intended application layout before capturing. Physical
 display resolution, native window size, device-pixel ratio and an emulated
 viewport do not establish the page's actual CSS viewport or breakpoint. Check
