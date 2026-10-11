@@ -16,6 +16,12 @@ for each significant interface section or why a screenshot would not help.
 Record any useful visual that cannot yet be captured as pending work rather
 than marking the article complete.
 
+For every Help review of a playbook or another flow that sends customer
+messages, also record whether an early recipient example would help. When useful, plan the message component, supported channel, illustrative
+case, language and placement after the introduction, before configuration
+instructions. Record a concrete reason for omitting it or the pending work
+needed to prepare it, following [message examples](messages.md#recipient-examples-in-help-articles).
+
 ## Work in small batches
 
 Normally finish one article, or one coherent section of a long guide. Prepare
@@ -34,6 +40,12 @@ Preview every inserted figure in the complete article. Check desktop and mobile
 layout, image sharpness and readability, accessible descriptions, tabs,
 keyboard interaction and inert example actions. Confirm screenshots have no
 image links or open controls. Preserve article links and the reading index.
+
+Check the recorded recipient-example decision for each applicable Help
+article. When an example is present, confirm its early placement, language,
+channel and actions match the actual flow, and that nearby prose identifies it
+as illustrative.
+
 Run the publishing project's normal build and relevant checks; verify styles
 in the browser rather than adding stylesheet-content tests.
 
