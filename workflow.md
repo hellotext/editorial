@@ -16,9 +16,8 @@ for each significant interface section or why a screenshot would not help.
 Record any useful visual that cannot yet be captured as pending work rather
 than marking the article complete.
 
-For every new or revised Help article about a playbook or another flow that
-sends customer messages, also record whether an early recipient example would
-help. When useful, plan the message component, supported channel, illustrative
+For every Help review of a playbook or another flow that sends customer
+messages, also record whether an early recipient example would help. When useful, plan the message component, supported channel, illustrative
 case, language and placement after the introduction, before configuration
 instructions. Record a concrete reason for omitting it or the pending work
 needed to prepare it, following [message examples](messages.md#recipient-examples-in-help-articles).

@@ -58,14 +58,14 @@ conceptual explanation, a trivial control, a redundant view or labels that
 would be unreadable at the article's final width. Judge coverage in the
 rendered article, not by a fixed image count.
 
-For every new or revised Help article about a playbook, automation, campaign or
-other flow that sends customer messages, consider an example of what the
-recipient sees. When it helps explain the purpose or outcome, place it near the
+For every Help review of a playbook, automation, campaign or other flow that
+sends customer messages, consider an example of what the recipient sees. When it helps explain the purpose or outcome, place it near the
 start, after a brief introduction and before the configuration walkthrough.
 Use the existing `messages` component and the channel appropriate to the actual
 flow. Follow [recipient example guidance](messages.md#recipient-examples-in-help-articles)
-and record the decision in the article plan, including a concrete reason when
-an example would not help or cannot yet be prepared.
+and record the decision in the article plan. Give a concrete reason when an
+example would not help. If it would help but cannot yet be prepared, record
+what is missing as pending work.
 
 Use neutral Spanish with tú. Match screenshots to the article language and the
 actual interface labels. Adapt published translations; do not replace localized

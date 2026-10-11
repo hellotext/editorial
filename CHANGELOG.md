@@ -2,8 +2,8 @@
 
 ## 2026-10-11 — Recipient examples in Help reviews
 
-Every new or revised Help article about a playbook or another flow that sends
-customer messages now considers an early example of the recipient experience.
+Every Help review of a playbook or another flow that sends customer messages
+now considers an early example of the recipient experience.
 Use the existing message component after the introduction and before setup,
 with a complete illustrative case in the article's language and a channel
 supported by the actual flow. Record why an example is omitted or what remains
