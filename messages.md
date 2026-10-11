@@ -33,6 +33,31 @@ All example actions stay inert. Demo links use reserved `example.com` addresses.
 This is an editorial authoring rule, not a restriction on customer-authored
 content or a claim about outbound API capabilities.
 
+## Recipient examples in Help articles
+
+Every review of a playbook or other flow that sends customer messages must
+consider an early example of the recipient experience. Show the first relevant
+business message, or a short exchange when the reply explains how the flow
+works. Place it after the introduction and before setup instructions so readers
+can understand the result before learning the controls.
+
+Use the implemented `messages` component with a complete, plausible case in
+the article's language. Choose WhatsApp, email, SMS or another implemented
+channel only when the actual flow supports it. Add another channel panel when
+the difference helps the reader; do not repeat the same example across every
+channel. Match the current flow's trigger, content, product selection, reply
+options and actions. Do not invent capabilities or imply that a message will
+always be generated, sent or delivered.
+
+State in adjacent prose that the example is illustrative and explain the
+relevant context; accessible captions are not visible below the component.
+Keep the editable definition and the source for the flow's behavior in the
+article work record. Prepare the example through the supported editorial
+renderer and export, without activating the flow or sending a message to
+produce the visual. If the example adds no useful information, record why. If
+it would help but a supported component or verified behavior is missing, record
+that need as pending work.
+
 ## Reuse and verification
 
 Keep the editable source definition with the consuming article. Identify cases
